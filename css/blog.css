@@ -1,0 +1,277 @@
+.content {
+    position: relative;
+    padding-bottom: 72px;
+    background-color: #eee;
+    z-index: 9;
+}
+
+.jumbotron {
+    background: url("../img/page-banner.jpg") no-repeat center;
+    height: 347px;
+    z-index: 9;
+    overflow: hidden;
+}
+
+.jumbotron h1 {
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+}
+
+.blog-list {
+    width: 945px;
+    margin: 50px auto;
+}
+
+.blog-item {
+    margin-bottom: 50px;
+}
+
+.item-img {
+    position: relative;
+}
+
+.item-img img {
+    width: 100%;
+}
+
+.item-img:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+.item-img:hover .continue-btn {
+    transform: scale(1);
+}
+
+.continue-btn {
+    position: absolute;
+    top: 151px;
+    left: 397px;
+    width: 150px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    line-height: 34px;
+    padding: 0 22px;
+    z-index: 9;
+    transition: all 0.3s;
+    transform: scale(0);
+}
+
+.continue-btn:hover {
+    background: #fff;
+    color: #e2214b;
+}
+
+.blog-info {
+    padding: 30px;
+    background-color: #fff;
+}
+
+.info-header {
+    height: 40px;
+}
+
+.content .label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.info-header span {
+    color: #9b9b9c;
+}
+
+.blog-info h2 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-size: 18px;
+    color: #9b9b9c;
+}
+
+.content h3 a {
+    color: #9b9b9c;
+    font-weight: bold;
+}
+
+.more {
+    margin: 50px auto;
+    height: 50px;
+    background-color: #fff;
+}
+
+.more:hover {
+    cursor: pointer;
+}
+
+.more .circle-list {
+    width: 50px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.more .circle {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #e2214b;
+}
+
+.article {
+    width: 750px;
+    margin: 50px auto;
+}
+
+.article h1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.article-text {
+    margin: 50px auto;
+    font-size: 14px;
+    color: #9b9b9c;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+.article-text p {
+    margin-bottom: 30px;
+}
+
+.article-text .qoute {
+    padding-left: 50px;
+    border-left: 5px solid #e2214b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.notes {
+    color: #9b9b9c;
+    font-size: 12px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #000;
+}
+
+.article .notes .notes-name {
+    font-size: 12px;
+    color: #272727;
+    font-weight: bold;
+}
+
+.notes .share {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.article-other {
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    color: #272727;
+    font-weight: bold;
+}
+
+.article-other .post {
+    font-size: 12px;
+    color: #9b9b9c;
+    font-weight: bold;
+}
+
+.article-other a {
+    display: inline-block;
+    width: 306px;
+}
+
+.article-other a:hover {
+    color: #e2214b;
+}
+
+.article-other .fl {
+    text-align: left;
+}
+
+.article-other .fr {
+    text-align: right;
+}
+
+.comment {
+    padding: 50px 0;
+}
+
+.comment-item {
+    padding: 30px 0;
+    color: #9b9b9c;
+    font-size: 14px;
+}
+
+.comment-item img {
+    margin-top: 20px;
+    width: 100px;
+}
+
+.comment-item h3 {
+    font-size: 18px;
+    color: #272727;
+    font-weight: bold;
+}
+
+.comment-item p {
+    line-height: 1.5em;
+}
+
+.comment-item .detail {
+    margin: 30px 0;
+}
+
+.reply-btn {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: #272727;
+    color: #fff;
+    font-size: 18px;
+}
+
+.reply-btn:hover {
+    background-color: #e2214b;
+}
+
+.sub-comment {
+    border-top: 1px solid #000;
+    padding-left: 100px;
+}
+
+.comment-form {
+    display: flex;
+    flex-flow: column;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.comment-form .input-group input {
+    width: 360px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #9b9b9c;
+    background-color: #eee;
+}
+
+.comment-form .reply-btn {
+    width: 150px;
+}

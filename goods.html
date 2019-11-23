@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商城</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/goods.css">
+</head>
+
+<body>
+    <div class="warp">
+        <!-- 引入共同头部 -->
+        <div id="header"></div>
+
+        <!-- 内容展示 -->
+        <div class="content-show">
+            <!-- banner图 -->
+            <div class="jumbotron">
+                <div class="banner-text core-area">
+                    <h2>Get youself a</h2>
+                    <h1>Christmas Gift</h1>
+                    <button>see collection</button>
+                </div>
+
+            </div>
+
+            <!-- 商品展示 -->
+            <div class="goods-show row core-area">
+                <div class="col-md-3">
+                    <div class="category aside-item">
+                        <h2>CATEGORIES <a class="fr">all</a></h2>
+                        <ul class="category-list">
+                            <li>
+                                <div class="title">
+                                    men
+                                    <a class="glyphicon glyphicon-play icon"></a>
+                                    <a class="glyphicon glyphicon-triangle-bottom other-icon"></a>
+                                </div>
+                                <ul class="treeview">
+                                    <li><a href="#" class="">T-Shirts</a></li>
+                                    <li><a href="#" class="">Striped Shirts</a></li>
+                                    <li><a href="#" class="">Half Shirts</a></li>
+                                    <li><a href="#" class="">Formal Shirts</a></li>
+                                    <li><a href="#" class="">Bilazers</a></li>
+                                    <li><a href="#" class="">Jackets</a></li>
+                                    <li class="last"><a href="#" class="">Jeans</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="title">
+                                    WoMen
+                                    <a class="glyphicon glyphicon-play icon"></a>
+                                    <a class="glyphicon glyphicon-triangle-bottom other-icon"></a>
+                                </div>
+                                <ul class="treeview">
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Striped Shirts</a></li>
+                                    <li><a href="#">Half Shirts</a></li>
+                                    <li><a href="#">Formal Shirts</a></li>
+                                    <li><a href="#">Bilazers</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li class="last"><a href="#">Jeans</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="title">
+                                    Accessories
+                                    <a class="glyphicon glyphicon-play icon"></a>
+                                    <a class="glyphicon glyphicon-triangle-bottom other-icon"></a>
+                                </div>
+                                <ul class="treeview">
+                                    <li><a href="#" class="">Footwear</a></li>
+                                    <li><a href="#" class="">Sunglasses</a></li>
+                                    <li><a href="#" class="">Watches</a></li>
+                                    <li class="last"><a href="#" class="">Utilities</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <div class="title">
+                                    Jewelry
+                                    <a class="glyphicon glyphicon-play icon"></a>
+                                    <a class="glyphicon glyphicon-triangle-bottom other-icon"></a>
+                                </div>
+                                <ul class="treeview">
+                                    <li><a href="#">Footwear</a></li>
+                                    <li><a href="#">Sunglasses</a></li>
+                                    <li><a href="#">Watches</a></li>
+                                    <li class="last"><a href="#">Utilities</a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+
+
+
+                    </div>
+
+                    <div class="price aside-item">
+                        <h2>price</h2>
+                        <div class="price-progress">
+                            <h3>you range
+                                <div class="range fr">
+                                    <span class="price-start"></span> - <span class="price-end">$800.00</span>
+                                </div>
+
+                            </h3>
+                            <div class="progress-bar">
+                                <div class="progress-line">
+                                </div>
+                                <div class="progress-dot " id="start-dot"></div>
+                                <div class="progress-dot " id="end-dot"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color aside-item">
+                        <h2>colors <a class="fr">all</a></h2>
+                        <div class="row">
+                            <div class="col-md-6 left">
+                                <ul>
+                                    <li><a href=""><span class="color-icon black"></span> black</a></li>
+                                    <li><a href=""><span class="color-icon blue"></span> blue</a></li>
+                                    <li><a href=""><span class="color-icon brown"></span> brown</a></li>
+                                    <li><a href=""><span class="color-icon green"></span> green</a></li>
+                                    <li class="last"><a href=""><span class="color-icon orange"></span> orange</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href=""><span class="color-icon pink"></span> pink</a></li>
+                                    <li><a href=""><span class="color-icon gold"></span> gold</a></li>
+                                    <li><a href=""><span class="color-icon purple"></span> purple</a></li>
+                                    <li><a href=""><span class="color-icon red"></span> red</a></li>
+                                    <li class="last"><a href=""><span class="color-icon grey"></span> grey</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sizes aside-item">
+                        <h2>CLOTHING SIZES <a class="fr">all</a></h2>
+                        <div class="size-list clearfix">
+                            <span class="fl">s</span>
+                            <span class="fl">m</span>
+                            <span class="fl">l</span>
+                            <span class="fl">xl</span>
+                            <span class="fl">xxl</span>
+                        </div>
+                    </div>
+
+                    <div class="brands aside-item">
+                        <h2>brands <a class="fr">all</a></h2>
+                        <div class="brands-container" data-mcs-theme="minimal-dark">
+                            <ul class="treeview">
+                                <li><a href="#">Armani Jeans</a></li>
+                                <li><a href="#">Ecko Untld.</a></li>
+                                <li><a href="#">Custo</a></li>
+                                <li><a href="#">Caramell</a></li>
+                                <li><a href="#">Addidas</a></li>
+                                <li><a href="#">Gucci</a></li>
+                                <li><a href="#">Polo</a></li>
+                                <li><a href="#">Armani Jeans</a></li>
+                                <li><a href="#">Ecko Untld.</a></li>
+                                <li><a href="#">Custo</a></li>
+                                <li><a href="#">Caramell</a></li>
+                                <li><a href="#">Addidas</a></li>
+                                <li><a href="#">Gucci</a></li>
+                                <li><a href="#">Polo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="show-header clearfix">
+                        <div class="style fl">
+                            <span class="glyphicon glyphicon-th active"></span>
+                            <span class="glyphicon glyphicon-th-list"></span>
+                        </div>
+                        <div class="info fr">
+                            Showing 1–9 of 17 results
+                        </div>
+                    </div>
+
+                    <div class="row goods-list">
+                        <div class="col-md-4 item1">
+                            <div class="tab-item">
+                                <div class="goods-img">
+                                    <div class="show-icon">
+                                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                        <i class="glyphicon glyphicon-heart-empty"></i>
+                                    </div>
+                                    <div class="goods-detail">
+                                        <p class="size">尺寸：<span> S XS M L XL XXL</span></p>
+                                        <p class="color-list">颜色：
+                                            <span class="color blue"></span>
+                                            <span class="color orange"></span>
+                                            <span class="color green"></span>
+                                            <span class="color deepblue"></span>
+                                            <span class="color red"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="goods-info clearfix">
+                                    <div class="name fl">
+                                        <h3>Settle Jute Bag</h3>
+                                        <h4>Utilites</h4>
+                                    </div>
+
+                                    <div class="price fr">
+                                        <h3>$ 256</h3>
+                                        <div class="star-list">
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star "></i>
+                                            <i class="glyphicon glyphicon-star "></i>
+                                            <i class="glyphicon glyphicon-star "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item2">
+                            <div class="tab-item">
+                                <div class="goods-img">
+                                    <div class="show-icon">
+                                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                        <i class="glyphicon glyphicon-heart-empty"></i>
+                                    </div>
+                                    <div class="goods-detail">
+                                        <p class="size">尺寸：<span> S XS M L XL XXL</span></p>
+                                        <p class="color-list">颜色：
+                                            <span class="color blue"></span>
+                                            <span class="color orange"></span>
+                                            <span class="color green"></span>
+                                            <span class="color deepblue"></span>
+                                            <span class="color red"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="goods-info clearfix">
+                                    <div class="name fl">
+                                        <h3>Binchotan Mask</h3>
+                                        <h4>Beauty</h4>
+                                    </div>
+
+                                    <div class="price fr">
+                                        <h3>$ 15</h3>
+                                        <div class="star-list">
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star"></i>
+                                            <i class="glyphicon glyphicon-star"></i>
+                                            <i class="glyphicon glyphicon-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item3">
+                            <div class="tab-item">
+                                <div class="goods-img">
+                                    <div class="show-icon">
+                                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                        <i class="glyphicon glyphicon-heart-empty"></i>
+                                    </div>
+                                    <div class="goods-detail">
+                                        <p class="size">尺寸：<span> S XS M L XL XXL</span></p>
+                                        <p class="color-list">颜色：
+                                            <span class="color blue"></span>
+                                            <span class="color orange"></span>
+                                            <span class="color green"></span>
+                                            <span class="color deepblue"></span>
+                                            <span class="color red"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="goods-info clearfix">
+                                    <div class="name fl">
+                                        <h3>Dolce Scarf</h3>
+                                        <h4>Fashion</h4>
+                                    </div>
+
+                                    <div class="price fr">
+                                        <h3>$ 99</h3>
+                                        <div class="star-list">
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star "></i>
+                                            <i class="glyphicon glyphicon-star "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row goods-list">
+                        <div class="col-md-4 item4">
+                            <div class="tab-item">
+                                <div class="goods-img">
+                                    <div class="show-icon">
+                                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                        <i class="glyphicon glyphicon-heart-empty"></i>
+                                    </div>
+                                    <div class="goods-detail">
+                                        <p class="size">尺寸：<span> S XS M L XL XXL</span></p>
+                                        <p class="color-list">颜色：
+                                            <span class="color blue"></span>
+                                            <span class="color orange"></span>
+                                            <span class="color green"></span>
+                                            <span class="color deepblue"></span>
+                                            <span class="color red"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="goods-info clearfix">
+                                    <div class="name fl">
+                                        <h3>Cowboy Hat</h3>
+                                        <h4>Skinny Fit</h4>
+                                    </div>
+
+                                    <div class="price fr">
+                                        <h3>$ 46</h3>
+                                        <div class="star-list">
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item5">
+                            <div class="tab-item">
+                                <div class="goods-img">
+                                    <div class="show-icon">
+                                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                        <i class="glyphicon glyphicon-heart-empty"></i>
+                                    </div>
+                                    <div class="goods-detail">
+                                        <p class="size">尺寸：<span> S XS M L XL XXL</span></p>
+                                        <p class="color-list">颜色：
+                                            <span class="color blue"></span>
+                                            <span class="color orange"></span>
+                                            <span class="color green"></span>
+                                            <span class="color deepblue"></span>
+                                            <span class="color red"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="goods-info clearfix">
+                                    <div class="name fl">
+                                        <h3>Jamaica Sweater</h3>
+                                        <h4>Womens wear</h4>
+                                    </div>
+
+                                    <div class="price fr">
+                                        <h3>$ 256</h3>
+                                        <div class="star-list">
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star"></i>
+                                            <i class="glyphicon glyphicon-star"></i>
+                                            <i class="glyphicon glyphicon-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item6">
+                            <div class="tab-item">
+                                <div class="goods-img">
+                                    <div class="show-icon">
+                                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                        <i class="glyphicon glyphicon-heart-empty"></i>
+                                    </div>
+                                    <div class="goods-detail">
+                                        <p class="size">尺寸：<span> S XS M L XL XXL</span></p>
+                                        <p class="color-list">颜色：
+                                            <span class="color blue"></span>
+                                            <span class="color orange"></span>
+                                            <span class="color green"></span>
+                                            <span class="color deepblue"></span>
+                                            <span class="color red"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="goods-info clearfix">
+                                    <div class="name fl">
+                                        <h3>Addidas Leather</h3>
+                                        <h4>Mens shoe</h4>
+                                    </div>
+
+                                    <div class="price fr">
+                                        <h3>$ 99</h3>
+                                        <div class="star-list">
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star "></i>
+                                            <i class="glyphicon glyphicon-star "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row goods-list">
+                        <div class="col-md-4 item7">
+                            <div class="tab-item">
+                                <div class="goods-img">
+                                    <div class="show-icon">
+                                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                        <i class="glyphicon glyphicon-heart-empty"></i>
+                                    </div>
+                                    <div class="goods-detail">
+                                        <p class="size">尺寸：<span> S XS M L XL XXL</span></p>
+                                        <p class="color-list">颜色：
+                                            <span class="color blue"></span>
+                                            <span class="color orange"></span>
+                                            <span class="color green"></span>
+                                            <span class="color deepblue"></span>
+                                            <span class="color red"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="goods-info clearfix">
+                                    <div class="name fl">
+                                        <h3>Stripped Wool</h3>
+                                        <h4>Mens wear</h4>
+                                    </div>
+
+                                    <div class="price fr">
+                                        <h3>$ 46</h3>
+                                        <div class="star-list">
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item8">
+                            <div class="tab-item">
+                                <div class="goods-img">
+                                    <div class="show-icon">
+                                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                        <i class="glyphicon glyphicon-heart-empty"></i>
+                                    </div>
+                                    <div class="goods-detail">
+                                        <p class="size">尺寸：<span> S XS M L XL XXL</span></p>
+                                        <p class="color-list">颜色：
+                                            <span class="color blue"></span>
+                                            <span class="color orange"></span>
+                                            <span class="color green"></span>
+                                            <span class="color deepblue"></span>
+                                            <span class="color red"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="goods-info clearfix">
+                                    <div class="name fl">
+                                        <h3>Backel’s Skin Gel</h3>
+                                        <h4>Mens Beauty</h4>
+                                    </div>
+
+                                    <div class="price fr">
+                                        <h3>$ 15</h3>
+                                        <div class="star-list">
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star"></i>
+                                            <i class="glyphicon glyphicon-star"></i>
+                                            <i class="glyphicon glyphicon-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item9">
+                            <div class="tab-item">
+                                <div class="goods-img">
+                                    <div class="show-icon">
+                                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                        <i class="glyphicon glyphicon-heart-empty"></i>
+                                    </div>
+                                    <div class="goods-detail">
+                                        <p class="size">尺寸：<span> S XS M L XL XXL</span></p>
+                                        <p class="color-list">颜色：
+                                            <span class="color blue"></span>
+                                            <span class="color orange"></span>
+                                            <span class="color green"></span>
+                                            <span class="color deepblue"></span>
+                                            <span class="color red"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="goods-info clearfix">
+                                    <div class="name fl">
+                                        <h3>Seqkl Watch</h3>
+                                        <h4>Accssories</h4>
+                                    </div>
+
+                                    <div class="price fr">
+                                        <h3>$ 99</h3>
+                                        <div class="star-list">
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star active"></i>
+                                            <i class="glyphicon glyphicon-star "></i>
+                                            <i class="glyphicon glyphicon-star "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="detail-show">
+                        <div class="row core-area">
+                            <div class="col-md-6 left-col">
+                                <h2>LEATHER SHOE</h2>
+                                <div class="detail-title clearfix">
+                                    <h1 class="fl">Buttero Casual </h1>
+                                    <div class="star-list fr">
+                                        <i class="glyphicon glyphicon-star active"></i>
+                                        <i class="glyphicon glyphicon-star active"></i>
+                                        <i class="glyphicon glyphicon-star active"></i>
+                                        <i class="glyphicon glyphicon-star active"></i>
+                                        <i class="glyphicon glyphicon-star active"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">decription</a>
+                                        </li>
+                                        <li role="presentation"><a href="#tags" aria-controls="tags" role="tab" data-toggle="tab">tags</a>
+                                        </li>
+                                        <li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">reviews</a></li>
+
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="description">
+                                            <p>These city boots won't let you down when it comes to comfort and practicality. Look manly and trendy on the daily in these versatile lace-up boots.</p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul>
+                                                        <li>Polished</li>
+                                                        <li>LeatherLace-up</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul>
+                                                        <li>bootRound</li>
+                                                        <li>toeFelt lining</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="color-size clearfix">
+                                                <div class="color fl">
+                                                    <h3>colors</h3>
+                                                    <span class="color-grey"></span>
+                                                    <span class="color-brown"></span>
+                                                    <span class="color-red"></span>
+                                                    <span class="color-blue"></span>
+                                                </div>
+                                                <div class="size fl">
+                                                    <h3>sizes</h3>
+                                                    <span>38</span>
+                                                    <span>39</span>
+                                                    <span>40</span>
+                                                    <span>41</span>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">$259.00</span>
+                                                <span class="old">$380.00</span>
+                                            </div>
+                                            <div class="quantity">
+                                                <span>quantity</span>
+                                                <input type="text" class="handle" value="1">
+                                                <div class="input-btn">
+                                                    <span class="glyphicon glyphicon-triangle-top add"></span>
+                                                    <span class="glyphicon glyphicon-triangle-bottom reduce"></span>
+
+                                                </div>
+                                                <a href="cart.html">
+                                                    <button class="detail-btn"><span
+                                                        class="glyphicon glyphicon-shopping-cart"></span> add to
+                                                    cart</button>
+                                                </a>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="tags">
+                                            <button class="detail-btn">late shoes</button>
+                                            <button class="detail-btn">shoe</button>
+                                            <button class="detail-btn">men</button>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="reviews">
+                                            <div class="comment-item row">
+                                                <img src="img/comments/2.png" alt="" class="col-md-2">
+                                                <div class="comment-info col-md-10">
+                                                    <div class="comment-text ">
+                                                        <h3>Mingel Hoops</h3>
+                                                        <div class="detail clearfix">
+                                                            <span class="fl">December 28, 2015 at 3:20 pm</span>
+                                                            <div class="star-list fr">
+                                                                <i class="glyphicon glyphicon-star active"></i>
+                                                                <i class="glyphicon glyphicon-star active"></i>
+                                                                <i class="glyphicon glyphicon-star active"></i>
+                                                                <i class="glyphicon glyphicon-star active"></i>
+                                                                <i class="glyphicon glyphicon-star active"></i>
+                                                            </div>
+                                                        </div>
+                                                        <p>
+                                                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos. Mauris in erat justo.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-item row sub-comment">
+                                                <img src="img/comments/1.png" alt="" class="col-md-2">
+                                                <div class="comment-info col-md-10">
+                                                    <div class="comment-text ">
+                                                        <h3>Mingel Hoops</h3>
+                                                        <div class="detail clearfix">
+                                                            <span class="fl">December 28, 2015 at 3:20 pm</span>
+                                                            <div class="star-list fr">
+                                                                <i class="glyphicon glyphicon-star active"></i>
+                                                                <i class="glyphicon glyphicon-star active"></i>
+                                                                <i class="glyphicon glyphicon-star active"></i>
+                                                                <i class="glyphicon glyphicon-star active"></i>
+                                                                <i class="glyphicon glyphicon-star active"></i>
+                                                            </div>
+                                                        </div>
+                                                        <p>
+                                                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos. Mauris in erat justo.
+                                                        </p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="leave-comment">
+                                                <h2>add your review</h2>
+                                                <div class="comment-form">
+
+                                                    <div class="input-group clearfix">
+                                                        <input type="text" placeholder="name" class="fl">
+                                                        <input type="text" placeholder="email" class="fr">
+                                                    </div>
+                                                    <div class="star-lists clearfix">
+                                                        <div class="star-list fl">
+                                                            <i class="glyphicon glyphicon-star"></i>
+
+                                                        </div>
+                                                        <div class="star-list fl">
+                                                            <i class="glyphicon glyphicon-star"></i>
+                                                            <i class="glyphicon glyphicon-star"></i>
+
+                                                        </div>
+                                                        <div class="star-list fl">
+                                                            <i class="glyphicon glyphicon-star"></i>
+                                                            <i class="glyphicon glyphicon-star"></i>
+                                                            <i class="glyphicon glyphicon-star"></i>
+                                                        </div>
+                                                        <div class="star-list fl">
+                                                            <i class="glyphicon glyphicon-star"></i>
+                                                            <i class="glyphicon glyphicon-star"></i>
+                                                            <i class="glyphicon glyphicon-star"></i>
+                                                            <i class="glyphicon glyphicon-star"></i>
+                                                        </div>
+                                                        <div class="star-list fl">
+                                                            <i class="glyphicon glyphicon-star "></i>
+                                                            <i class="glyphicon glyphicon-star "></i>
+                                                            <i class="glyphicon glyphicon-star "></i>
+                                                            <i class="glyphicon glyphicon-star"></i>
+                                                            <i class="glyphicon glyphicon-star "></i>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <textarea name="" id="" rows="6" placeholder="message"></textarea>
+                                                    <button class="detail-btn">submit</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 right-col">
+                                <img src="img/pro-details/big-1.jpg" alt="">
+                                <div class="photo-list">
+                                    <ul class="clearfix">
+                                        <li class="fl"><img src="img/pro-details/1.jpg" alt=""></li>
+                                        <li class="fl"><img src="img/pro-details/2.jpg" alt=""></li>
+                                        <li class="fl"><img src="img/pro-details/3.jpg" alt=""></li>
+                                        <li class="fl"><img src="img/pro-details/4.jpg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="remove">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </div>
+                    </div>
+
+                    <div class="more">
+                        <div class="circle-list">
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 引入共同联系我们和品牌展示 -->
+        <div id="contact"></div>
+        <!-- 引入共同底部 -->
+        <div id="footer"></div>
+
+    </div>
+
+    <script src="js/jquery-1.x-git.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js "></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/goods.js "></script>
+</body>
+
+</html>

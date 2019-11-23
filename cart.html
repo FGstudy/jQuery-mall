@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商城</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <div class="warp">
+        <!-- 引入共同头部 -->
+        <div id="header"></div>
+
+        <!-- 内容展示 -->
+        <div class="content">
+            <!-- 购物车页面 -->
+            <div class="cart-content">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs cartgoods-title" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#shopcart" aria-controls="shopcart" role="tab" data-toggle="tab">
+                            <span class="num">1</span>
+                            <span>购物车</span>
+                        </a>
+                        <div class="cartgoods-line"></div>
+                    </li>
+                    <li role="presentation">
+                        <a href="#settle" aria-controls="settle" role="tab" data-toggle="tab"><span class="num">2</span>
+							<span>结算</span></a>
+                        <div class="cartgoods-line"></div>
+                    </li>
+                    <li role="presentation"><a href="#rece" aria-controls="rece" role="tab" data-toggle="tab"><span
+								class="num">3</span>
+							<span>待收货</span></a></li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active shopcart-pane" id="shopcart">
+                        <h1>购物车</h1>
+                        <div class="row cart-title">
+                            <div class="col-md-5">商品</div>
+                            <div class="col-md-2">价格</div>
+                            <div class="col-md-2">数量</div>
+                            <div class="col-md-2">全部</div>
+                            <div class="col-md-1">移除</div>
+                        </div>
+                        <div class="row cart-item">
+                            <div class="col-md-5 cart-product clearfix">
+                                <img src="img/cart-product/2.jpg" alt="" class="fl">
+                                <div class="info fl">
+                                    <h2>Shanos Matte Blue</h2>
+                                    <p>size: <span>M</span></p>
+                                    <p>color: <span>Dark Blue</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 price">$356</div>
+                            <div class="col-md-2 amount">
+                                <div class="input-group">
+                                    <span class="input-group-btn subtract">
+										<button class="btn btn-default" type="button">-</button>
+									</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="1">
+                                    <span class="input-group-btn add">
+										<button class="btn btn-default" type="button">+</button>
+									</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2 sum">$356.00</div>
+                            <div class="col-md-1 remove">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                            </div>
+                        </div>
+                        <div class="row cart-item">
+                            <div class="col-md-5 cart-product clearfix">
+                                <img src="img/cart-product/3.jpg" alt="" class="fl">
+                                <div class="info fl">
+                                    <h2>Popline Tops</h2>
+                                    <p>size: <span>M</span></p>
+                                    <p>color: <span>Dark Blue</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 price">$238</div>
+                            <div class="col-md-2 amount">
+                                <div class="input-group">
+                                    <span class="input-group-btn subtract">
+										<button class="btn btn-default" type="button">-</button>
+									</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="2">
+                                    <span class="input-group-btn add">
+										<button class="btn btn-default" type="button">+</button>
+									</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2 sum">$476.00</div>
+                            <div class="col-md-1 remove">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                            </div>
+                        </div>
+                        <div class="row cart-item">
+                            <div class="col-md-5 cart-product clearfix">
+                                <img src="img/cart-product/3.jpg" alt="" class="fl">
+                                <div class="info fl">
+                                    <h2>Popline Tops</h2>
+                                    <p>size: <span>M</span></p>
+                                    <p>color: <span>Dark Blue</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 price">$238</div>
+                            <div class="col-md-2 amount">
+                                <div class="input-group">
+                                    <span class="input-group-btn subtract">
+										<button class="btn btn-default" type="button">-</button>
+									</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="2">
+                                    <span class="input-group-btn add">
+										<button class="btn btn-default" type="button">+</button>
+									</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2 sum">$476.00</div>
+                            <div class="col-md-1 remove">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                            </div>
+                        </div>
+                        <div class="row cart-calc ">
+                            <div class="col-md-4 ">
+                                <h2>CALCULATE SHIPPING COST</h2>
+                                <form>
+                                    <select class="">
+										<option>united state1</option>
+										<option>united state2</option>
+										<option>united state3</option>
+										<option>united state4</option>
+										<option>united state5</option>
+									</select>
+                                    <select class="">
+										<option>state/province1</option>
+										<option>state/province2</option>
+										<option>state/province3</option>
+										<option>state/province4</option>
+										<option>state/province5</option>
+									</select>
+                                    <input type="text" class="" placeholder="state/province">
+                                    <button class="calc-btn">CALCULATE SHIPPING</button>
+                                </form>
+                            </div>
+                            <div class="col-md-3 coupon">
+                                <h2>COUPON DISCOUNT</h2>
+                                <p>Enter your coupon code if you have one</p>
+                                <input type="text" class="" placeholder="enter your code here">
+                                <button class="calc-btn btn-1">CALCULATE SHIPPING</button>
+                            </div>
+                            <div class="col-md-5 payment">
+                                <h2>PAYMENT DETAILS</h2>
+                                <p class="clearfix"><span class="fl">SUBTOTAL</span><span class="fr " id="subtotal"></span></p>
+                                <p class="clearfix ship"><span class="fl">SHIPPING</span><span class="fr">FREE
+										SHIPPING</span></p>
+                                <p class="clearfix grand"><span class="fl">GRAND OTAL</span><span class="fr " id="grand-total"></span>
+                                </p>
+                                <button class="calc-btn  to-settle">Procced to Checkout</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane settle-pane" id="settle">
+                        <h1>结算 <br> <span class="sub-title">付款信息</span></h1>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>邮寄地址</h2>
+                                <div class="add">
+                                    <input type="text" class="" placeholder="姓名*">
+                                    <input type="tel" class="" placeholder="电话*">
+                                    <input type="text" class="" placeholder="所在国家*">
+                                    <select>
+										<option>省份</option>
+										<option>state/province2</option>
+										<option>state/province3</option>
+										<option>state/province4</option>
+										<option>state/province5</option>
+									</select>
+                                    <input type="number" class="" placeholder="邮编*">
+                                    <textarea name="" id="" rows="4"></textarea>
+
+                                </div>
+                                <div class="add-confirm">
+                                    <div class="checkbox">
+                                        <div class="check">
+                                            <div class="redbox"></div>
+                                        </div>
+                                        <h2>确认地址</h2>
+                                    </div>
+                                    <div class="confirm-form">
+                                        <input type="text" class="" placeholder="first name*">
+                                        <input type="text" class="" placeholder="last name*">
+                                        <input type="text" class="" placeholder="company name">
+                                        <input type="email" class="" placeholder="email address*">
+                                        <input type="tel" class="" placeholder="phone*">
+                                        <select>
+											<option>state</option>
+											<option>state/province2</option>
+											<option>state/province3</option>
+											<option>state/province4</option>
+											<option>state/province5</option>
+										</select>
+                                        <input type="number" class="" placeholder="postcode*">
+                                        <textarea name="" id="" rows="4" placeholder="address*"></textarea>
+                                        <textarea name="" id="" rows="4" placeholder="Inclue custom Requirements for this order"></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 order">
+                                <h2>您的订单</h2>
+                                <p class="clearfix order-title"><span class="fl">商品</span><span class="fr">全部</span></p>
+                                <div class="order-content"></div>
+                                <div class="order-total">
+                                    <p class="clearfix "><span class="fl">合计</span><span class="fr total-num"></span></p>
+                                    <p class="clearfix "><span class="fl">运费</span><span class="fr">免邮</span></p>
+                                </div>
+
+                                <p class="clearfix tax"><span class="fl">增值税</span><span class="fr tax-num">$ 144.00</span></p>
+                                <p class="clearfix overall"><span class="fl">总计</span><span class="fr overall-num"></span>
+                                </p>
+                                <h2>付款方式</h2>
+                                <div class="pay-check">
+                                    <div class="checkbox">
+                                        <div class="check">
+                                            <div class="redbox"></div>
+                                        </div>
+                                        <h2> 银行卡</h2>
+                                        <h3>请选择银联银行卡</h3>
+                                    </div>
+                                </div>
+                                <div class="pay-check">
+                                    <div class="checkbox">
+                                        <div class="check">
+                                            <div class="redbox"></div>
+                                        </div>
+                                        <h2> 网上支付</h2>
+                                        <h3>请选择您需要的支付方式</h3>
+                                    </div>
+                                </div>
+                                <div class="paypal">
+                                    <ul>
+                                        <li>
+                                            <a href=""><img src="img/payment/express.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><img src="img/payment/jcb.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><img src="img/payment/mastercard.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><img src="img/payment/visa.png" alt=""></a>
+                                        </li>
+                                    </ul>
+                                    <img src="img/payment/paypal.png" alt="" class="paypal-logo">
+                                </div>
+                                <button class="calc-btn">确认支付</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane rece-pane" id="rece">
+                        <p>Thank you. Your Order Has been Received.</p>
+                        <div class="row rece-info">
+                            <div class="col-md-3">
+                                <div class="rece-data">
+                                    <p>ORDER NO</p>
+                                    <p class="rece-bold">K 265798</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="rece-data">
+                                    <p>DATE</p>
+                                    <p class="rece-bold">DEC 31, 2015</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="rece-data">
+                                    <p>TOTAL</p>
+                                    <p class="rece-bold rece-total">$ 1104</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="rece-data">
+                                    <p>PAYMENT METHOD</p>
+                                    <p class="rece-bold">CHECK PAYMENT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row rece-cols">
+                            <div class="col-md-6 order">
+                                <h2>ORDER DETAILS</h2>
+
+                                <p class="clearfix order-title"><span class="fl">商品</span><span class="fr">全部</span></p>
+                                <div class="order-content"></div>
+                                <div class="order-total">
+                                    <p class="clearfix "><span class="fl">合计</span><span class="fr total-num"></span></p>
+                                    <p class="clearfix "><span class="fl">运费</span><span class="fr">免邮</span></p>
+                                </div>
+
+                                <p class="clearfix tax"><span class="fl">增值税</span><span class="fr">$144.00</span></p>
+                                <p class="clearfix overall"><span class="fl">总计</span><span class="fr overall-num"></span>
+                                </p>
+                            </div>
+                            <div class="col-md-6 order">
+                                <div class="detail">
+                                    <h2>CUSTOMER DETAILS</h2>
+                                    <div class="row">
+                                        <div class="col-md-6 detail-name">Name :</div>
+                                        <div class="col-md-6">Mellisa Wright</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 detail-name">Email :</div>
+                                        <div class="col-md-6">mellisa_W80@outlook.com</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 detail-name">Telephone :</div>
+                                        <div class="col-md-6">Mellisa Wright</div>
+                                    </div>
+                                </div>
+                                <div class="billing">
+                                    <h2>BILLING ADDRESS</h2>
+                                    <h3>Mellisa Wright</h3>
+                                    <h4> 5722 Sam Houston Cir</h4>
+                                    <h4>Austin, TX 78731</h4>
+                                    <h4>Phone : + 123 456 789</h4>
+                                </div>
+                                <div class="shipping">
+                                    <h2>BILLING ADDRESS</h2>
+                                    <h3>Mellisa Wright</h3>
+                                    <h4> 5722 Sam Houston Cir</h4>
+                                    <h4>Austin, TX 78731</h4>
+                                    <h4>Phone : + 123 456 789</h4>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 引入共同联系我们和品牌展示 -->
+            <div id="contact"></div>
+            <!-- 引入共同底部 -->
+            <div id="footer"></div>
+
+        </div>
+
+        <script src="js/jquery-1.x-git.min.js "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js "></script>
+        <script src="js/cart.js "></script>
+</body>
+
+</html>
